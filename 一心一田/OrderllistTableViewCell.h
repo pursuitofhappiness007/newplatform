@@ -12,9 +12,10 @@
 @property (weak,nonatomic)NSString *image;
 @property (weak,nonatomic)NSString *name;
 @property (weak, nonatomic) IBOutlet UIButton *goodspicBtn;
-
-@property (weak,nonatomic)NSString *price;
-@property (weak,nonatomic)NSString *count;
+//卖了多少件
+@property (weak,nonatomic)NSString *hasbeensaled;
+//规格乘以单价
+@property (weak,nonatomic)NSString *specifciandprice;
 @property (weak,nonatomic)NSString *toatalmoney;
 + (instancetype)cellWithTableView:(UITableView *)tableview cellwithIndexPath:(NSIndexPath *)indexpath;
 @end

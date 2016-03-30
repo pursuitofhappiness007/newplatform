@@ -119,7 +119,7 @@
             <connections>
                 <outlet property="goodsimage" destination="PrB-h5-Vq0" id="Tmu-Yq-yM0"/>
                 <outlet property="goodspicBtn" destination="17p-lE-PDC" id="92x-bo-dgl"/>
-                <outlet property="hasbeensaled" destination="qUv-eC-qCM" id="dP7-Vf-9tU"/>
+                <outlet property="hasbeensaledlab" destination="qUv-eC-qCM" id="kfl-Tg-hyA"/>
                 <outlet property="namelab" destination="iem-bf-2YM" id="Uxt-4z-ltS"/>
                 <outlet property="specificandpricelab" destination="VhI-J7-aWb" id="Eaq-Rf-Mt4"/>
                 <outlet property="totalmoneylab" destination="KYk-r3-MMA" id="c1h-Dx-5jS"/>

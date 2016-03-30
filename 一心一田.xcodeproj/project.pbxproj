@@ -33,6 +33,8 @@
 		CEECE2061C9AD1AD009D11D8 /* RechargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECE2001C9AD1AD009D11D8 /* RechargeCell.m */; };
 		CEECE2071C9AD1AD009D11D8 /* RechargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECE2011C9AD1AD009D11D8 /* RechargeCell.xib */; };
 		FE05C3EF1CABFF9900B79A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE05C3EE1CABFF9900B79A59 /* Assets.xcassets */; };
+		FE05C3F11CAC055F00B79A59 /* blank.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE05C3F01CAC055F00B79A59 /* blank.xib */; };
+		FE05C3F31CAC06DE00B79A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE05C3F21CAC06DE00B79A59 /* Assets.xcassets */; };
 		FE06ABBC1C9BFAF30072F2BB /* pricechooser.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE06ABBB1C9BFAF30072F2BB /* pricechooser.xib */; };
 		FE1897221CA3A7D300310488 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1897211CA3A7D300310488 /* 2.png */; };
 		FE1897291CA3B29700310488 /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1897271CA3B29700310488 /* Default-568h.png */; };
@@ -210,6 +212,8 @@
 		CEECE2001C9AD1AD009D11D8 /* RechargeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeCell.m; sourceTree = "<group>"; };
 		CEECE2011C9AD1AD009D11D8 /* RechargeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RechargeCell.xib; sourceTree = "<group>"; };
 		FE05C3EE1CABFF9900B79A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE05C3F01CAC055F00B79A59 /* blank.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = blank.xib; sourceTree = "<group>"; };
+		FE05C3F21CAC06DE00B79A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE06ABBB1C9BFAF30072F2BB /* pricechooser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pricechooser.xib; sourceTree = "<group>"; };
 		FE1897211CA3A7D300310488 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		FE1897271CA3B29700310488 /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
@@ -588,6 +592,7 @@
 		FE6DC02B1C8D597200E93578 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE05C3F21CAC06DE00B79A59 /* Assets.xcassets */,
 				FE05C3EE1CABFF9900B79A59 /* Assets.xcassets */,
 				FE6DC02C1C8D597200E93578 /* main.m */,
 			);
@@ -966,6 +971,7 @@
 				FE906D1D1CA0F6A80099D786 /* zeroBtn.xib */,
 				FE906D1F1CA0F6B90099D786 /* oneBtn.xib */,
 				FE906D211CA0F6C30099D786 /* twoBtn.xib */,
+				FE05C3F01CAC055F00B79A59 /* blank.xib */,
 			);
 			name = "订单详情";
 			sourceTree = "<group>";
@@ -1181,6 +1187,7 @@
 				CEECE1E71C9AD17D009D11D8 /* NavBarForHome.xib in Resources */,
 				FEDFA0EB1C912A500010E5E3 /* AddInOrderTableViewCell.xib in Resources */,
 				FE906D201CA0F6B90099D786 /* oneBtn.xib in Resources */,
+				FE05C3F31CAC06DE00B79A59 /* Assets.xcassets in Resources */,
 				CEECE1F81C9AD19F009D11D8 /* AccountRecharge.xib in Resources */,
 				FEB20D9A1C926E2C0018A11C /* NavBar.xib in Resources */,
 				CEECE1D91C9AD173009D11D8 /* PersonalCenterViewController.xib in Resources */,
@@ -1190,6 +1197,7 @@
 				FECA29AC1CAB6FE00063C7E1 /* CountChooserViewController.xib in Resources */,
 				FEDFA0C01C91242C0010E5E3 /* ShopcarViewController.xib in Resources */,
 				CEECE1E61C9AD17D009D11D8 /* HomeViewController.xib in Resources */,
+				FE05C3F11CAC055F00B79A59 /* blank.xib in Resources */,
 				FECF1A921C9FF7BB00A7A580 /* 4.png in Resources */,
 				CEECE1F11C9AD18F009D11D8 /* CollectionListTableViewCell.xib in Resources */,
 				FEDFA0E11C9129180010E5E3 /* OrderConformationViewController.xib in Resources */,

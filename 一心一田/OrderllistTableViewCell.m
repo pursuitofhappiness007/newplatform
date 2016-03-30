@@ -14,7 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *totalmoneylab;
 //已售多少件
-@property (weak, nonatomic) IBOutlet UILabel *hasbeensaled;
+@property (weak, nonatomic) IBOutlet UILabel *hasbeensaledlab;
+
 //规格乘以单价
 @property (weak, nonatomic) IBOutlet UILabel *specificandpricelab;
 
@@ -51,6 +52,14 @@
 
 -(void)setToatalmoney:(NSString *)toatalmoney{
     _totalmoneylab.text=toatalmoney;
+}
+
+-(void)setHasbeensaled:(NSString *)hasbeensaled{
+    _hasbeensaledlab.text=hasbeensaled;
+}
+
+-(void)setSpecifciandprice:(NSString *)specifciandprice{
+    _specificandpricelab.text=specifciandprice;
 }
 - (void)awakeFromNib {
     // Initialization code

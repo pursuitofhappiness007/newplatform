@@ -158,12 +158,6 @@
         NSDictionary *dict=_tabledata[indexPath.row];
     cell.image=[dict stringForKey:@"thumbnailImg"];
     cell.name=[dict stringForKey:@"name"];
-   
-    cell.price=[NSString stringWithFormat:@"¥%.2f",[dict doubleForKey:@"price"]];
-    int kcount=[LocalAndOnlineFileTool singlegoodcount:[dict stringForKey:@"id"]];
-    cell.count=[NSString stringWithFormat:@"X%d",kcount];
-    
-    cell.toatalmoney=[NSString stringWithFormat:@"总价:¥%.2f",[dict doubleForKey:@"price"]*kcount];
       return cell;
     }
 }

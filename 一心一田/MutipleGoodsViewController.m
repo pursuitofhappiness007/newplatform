@@ -201,61 +201,83 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return [[orderinfo arrayForKey:@"orderDetailList"]count];
+    return 1;
+
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-    
+        return [[orderinfo arrayForKey:@"orderDetailList"]count];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
         OrderllistTableViewCell *cell=[OrderllistTableViewCell cellWithTableView:tableView cellwithIndexPath:indexPath];
         cell.selectionStyle=UITableViewCellSelectionStyleNone;
-    NSDictionary *dict=[orderinfo arrayForKey:@"orderDetailList"][indexPath.row];
+    NSDictionary *dict=[orderinfo arrayForKey:@"orderDetailList"][indexPath.section];
         cell.image=[dict stringForKey:@"goodsPic"];
         cell.name=[dict stringForKey:@"goodsName"];
-        
-        cell.price=[NSString stringWithFormat:@"¥%@",[dict stringForKey:@"frontPrice"]];
-        
-        cell.count=[NSString stringWithFormat:@"X%@",[dict stringForKey:@"frontQuantity"]];
+        cell.toatalmoney=[NSString stringWithFormat:@"¥%.2f",[dict doubleForKey:@"frontPrice"]*[dict int32ForKey:@"frontQuantity"]];
     
-        cell.toatalmoney=[NSString stringWithFormat:@"商品总价:¥%.2f",[dict doubleForKey:@"frontPrice"]*[dict int32ForKey:@"frontQuantity"]];
+    cell.specifciandprice=[NSString stringWithFormat:@"%@件X%.2f",[dict stringForKey:@"frontQuantity"],[dict doubleForKey:@"frontPrice"]];
+    cell.hasbeensaled=[NSString stringWithFormat:@"已售%@件",[dict stringForKey:@"frontWeight"]];
     
         return cell;
    
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-  return  MAIN_HEIGHT*0.12;
+    if (section==[[orderinfo arrayForKey:@"orderDetailList"]count]-1) {
+        return  MAIN_HEIGHT*0.12;
+    }
+    else
+        return 5;
+  
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return  MAIN_HEIGHT*0.17;
+    return  MAIN_HEIGHT*0.1;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    UIView *view=[[[NSBundle mainBundle]loadNibNamed:@"commonfooter" owner:self options:nil]firstObject];
-    view.frame=CGRectMake(0, 0, MAIN_WIDTH, MAIN_HEIGHT*0.12);
-    NSDictionary *dict=[orderinfo dictionaryForKey:@"orderHeader"];
-    //支付编号
-    _ordercodelab.text=[NSString stringWithFormat:@"支付编号:%@",[dict stringForKey:@"orderCode"]];
-    //订单时间啊
-    _orderdealtimelab.text=[NSString stringWithFormat:@"订单时间:%@",[dict stringForKey:@"createTime"]];
-    //自动收货时间
-    _automaticalreceivetimelab.text=[NSString stringWithFormat:@"自动收货时间:%@",[dict stringForKey:@"buyerReceiveTime"]];
+    UIView *view=nil;
+    if (section==[[orderinfo arrayForKey:@"orderDetailList"]count]-1){
+        view=[[[NSBundle mainBundle]loadNibNamed:@"commonfooter" owner:self options:nil]firstObject];
+        view.frame=CGRectMake(0, 0, MAIN_WIDTH, MAIN_HEIGHT*0.12);
+        NSDictionary *dict=[orderinfo dictionaryForKey:@"orderHeader"];
+        //支付编号
+        _ordercodelab.text=[NSString stringWithFormat:@"支付编号:%@",[dict stringForKey:@"orderCode"]];
+        //订单时间啊
+        _orderdealtimelab.text=[NSString stringWithFormat:@"订单时间:%@",[dict stringForKey:@"createTime"]];
+        //自动收货时间
+        _automaticalreceivetimelab.text=[NSString stringWithFormat:@"自动收货时间:%@",[dict stringForKey:@"buyerReceiveTime"]];
+    }
+    else{
+       view=[[[NSBundle mainBundle]loadNibNamed:@"blank" owner:nil options:nil]firstObject];
+        view.frame=CGRectMake(0, 0, MAIN_WIDTH,5);
+        
+    }
+    
     return view;
  
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return MAIN_HEIGHT*0.037;
+    if (section==0) {
+        return MAIN_HEIGHT*0.037;
+    }
+    else{
+        return 0;
+    }
+    
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if(section==0){
     UIView *v=[[[NSBundle mainBundle]loadNibNamed:@"headerfortableview" owner:self options:nil]firstObject];
     v.frame=CGRectMake(0, 0, MAIN_WIDTH,MAIN_HEIGHT*0.037);
     NSDictionary *dict=[orderinfo dictionaryForKey:@"orderHeader"];
     _ordercodelabinheader.text=[NSString stringWithFormat:@"订单编号:%@",[dict stringForKey:@"orderCode"]];
     return v;
+    }
+    else
+        return nil;
 }
 
 

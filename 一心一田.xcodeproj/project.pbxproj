@@ -32,9 +32,8 @@
 		CEECE2051C9AD1AD009D11D8 /* AcountDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECE1FE1C9AD1AD009D11D8 /* AcountDetailTableViewCell.xib */; };
 		CEECE2061C9AD1AD009D11D8 /* RechargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECE2001C9AD1AD009D11D8 /* RechargeCell.m */; };
 		CEECE2071C9AD1AD009D11D8 /* RechargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECE2011C9AD1AD009D11D8 /* RechargeCell.xib */; };
-		FE05C3EF1CABFF9900B79A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE05C3EE1CABFF9900B79A59 /* Assets.xcassets */; };
 		FE05C3F11CAC055F00B79A59 /* blank.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE05C3F01CAC055F00B79A59 /* blank.xib */; };
-		FE05C3F31CAC06DE00B79A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE05C3F21CAC06DE00B79A59 /* Assets.xcassets */; };
+		FE05C3F71CAC082200B79A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE05C3F61CAC082200B79A59 /* Assets.xcassets */; };
 		FE06ABBC1C9BFAF30072F2BB /* pricechooser.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE06ABBB1C9BFAF30072F2BB /* pricechooser.xib */; };
 		FE1897221CA3A7D300310488 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1897211CA3A7D300310488 /* 2.png */; };
 		FE1897291CA3B29700310488 /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1897271CA3B29700310488 /* Default-568h.png */; };
@@ -211,9 +210,8 @@
 		CEECE1FF1C9AD1AD009D11D8 /* RechargeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeCell.h; sourceTree = "<group>"; };
 		CEECE2001C9AD1AD009D11D8 /* RechargeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeCell.m; sourceTree = "<group>"; };
 		CEECE2011C9AD1AD009D11D8 /* RechargeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RechargeCell.xib; sourceTree = "<group>"; };
-		FE05C3EE1CABFF9900B79A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE05C3F01CAC055F00B79A59 /* blank.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = blank.xib; sourceTree = "<group>"; };
-		FE05C3F21CAC06DE00B79A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE05C3F61CAC082200B79A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE06ABBB1C9BFAF30072F2BB /* pricechooser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pricechooser.xib; sourceTree = "<group>"; };
 		FE1897211CA3A7D300310488 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		FE1897271CA3B29700310488 /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
@@ -592,8 +590,7 @@
 		FE6DC02B1C8D597200E93578 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FE05C3F21CAC06DE00B79A59 /* Assets.xcassets */,
-				FE05C3EE1CABFF9900B79A59 /* Assets.xcassets */,
+				FE05C3F61CAC082200B79A59 /* Assets.xcassets */,
 				FE6DC02C1C8D597200E93578 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -1160,6 +1157,7 @@
 				FE906D1C1CA0F4220099D786 /* commonfooter.xib in Resources */,
 				FECF1A961C9FF85E00A7A580 /* 3.png in Resources */,
 				FE18972A1CA3B29700310488 /* Default-568h@2x.png in Resources */,
+				FE05C3F71CAC082200B79A59 /* Assets.xcassets in Resources */,
 				FEDC9FCA1C97C4710002FB2F /* GoodListTableViewCell.xib in Resources */,
 				FEDFA0B71C9122B00010E5E3 /* OrderllistTableViewCell.xib in Resources */,
 				FEDFA0B21C911C7F0010E5E3 /* MutipleGoodsViewController.xib in Resources */,
@@ -1171,7 +1169,6 @@
 				FEDFA1051C914C600010E5E3 /* MyOrderTableViewCell.xib in Resources */,
 				FEB20D9C1C929A830018A11C /* titileaftersearch.xib in Resources */,
 				CEECE2051C9AD1AD009D11D8 /* AcountDetailTableViewCell.xib in Resources */,
-				FE05C3EF1CABFF9900B79A59 /* Assets.xcassets in Resources */,
 				FEDFA0CA1C91266E0010E5E3 /* ClassficationViewController.xib in Resources */,
 				FECF1A901C9FEDCD00A7A580 /* NewFuturesViewController.xib in Resources */,
 				CEECE1E91C9AD17D009D11D8 /* tableviewheader.xib in Resources */,
@@ -1187,7 +1184,6 @@
 				CEECE1E71C9AD17D009D11D8 /* NavBarForHome.xib in Resources */,
 				FEDFA0EB1C912A500010E5E3 /* AddInOrderTableViewCell.xib in Resources */,
 				FE906D201CA0F6B90099D786 /* oneBtn.xib in Resources */,
-				FE05C3F31CAC06DE00B79A59 /* Assets.xcassets in Resources */,
 				CEECE1F81C9AD19F009D11D8 /* AccountRecharge.xib in Resources */,
 				FEB20D9A1C926E2C0018A11C /* NavBar.xib in Resources */,
 				CEECE1D91C9AD173009D11D8 /* PersonalCenterViewController.xib in Resources */,
